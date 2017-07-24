@@ -31,6 +31,7 @@
         </div>
     </div>
     {{ Html::script('bower/jquery-2.1.4.min/index.js') }}
+    {{ Html::script('js/frontend/login.js')}}
     {{ Html::script('bower/bootstrap/dist/js/bootstrap.min.js') }}
 </body>
 </div>

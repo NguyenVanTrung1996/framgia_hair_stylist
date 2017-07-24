@@ -28,8 +28,8 @@
                         <li><a href="#" data-nav-section="about"><span>About</span></a></li>
                         <li><a href="#" data-nav-section="services"><span>Services</span></a></li>
                         <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
-                        <li><a href="{{asset('http://localhost:8000/login#')}}" data-nav-section="login" ><span>Login</span></a></li>
-                        <li><a href="#" data-nav-section="signup"><span>Sign Up</span></a></li>
+                        <li><a href="{{ asset('login') }}" data-nav-section="login" ><span>Login</span></a></li>
+                        <li><a href="{{ asset('signup') }}" data-nav-section="signup"><span>Sign Up</span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -76,10 +76,10 @@
                         <div>
                             <form>
                                 <div class="form-group">Input info</label>
-                                    <input type="name" class="form-control" placeholder="name">
+                                    <input type="name" class="form-control" placeholder="your name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="Phone" class="form-control" placeholder="phoneNumber">
+                                    <input type="Phone" class="form-control" placeholder="your phone number">
                                 </div>
                             </form>
                         </div>
