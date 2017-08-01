@@ -16,9 +16,8 @@ use DB;
 
 class BillController extends Controller
 {
-
     protected $bill, $billItem;
-
+    
     public function __construct(
         BillRepository $bill,
         BillItemRepository $billItem
