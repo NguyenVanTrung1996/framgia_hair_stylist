@@ -197,7 +197,11 @@
             </div>
         </div>
     </section>
+{{-- <<<<<<< HEAD --}}
+     {{-- <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+=======
 {{--      <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+>>>>>>> eead4adbfb461adad5ceb40546da428e0c8ac76e
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -305,11 +309,6 @@
                                             <input type="text" class=" flexbox-grid-form-input form-control" id="inputlastname" data-bind="value: LastName">
                                 </div>
                                 <div class="col-md-12 flexbox-grid-form">
-                                    <label class="text-title-field" for="inputemail">{{ __('Địa chỉ Email') }}</label>
-                                    <input type="text" class="form-control flexbox-grid-form-input" id="inputemail" data-bind="value: Email">
-                                </div>
-                                <div class="col-md-12 flexbox-grid-form">
-                                    <label class="text-title-field" for="inputdate">{{ __('Ngày sinh') }}</label>
                                     <input type="date" class="form-control flexbox-grid-form-input" id="inputemail" data-bind="value: ngaysinh">
                                 </div>
                                <div class="col-md-12 flexbox-grid-form">
@@ -459,8 +458,8 @@
                                 {{ __('Close') }}
                             </button>
                         </div>
-                    </div>
-                </div>
+                    </form>
+                </div>  
             </div>
         </div>
     </div>

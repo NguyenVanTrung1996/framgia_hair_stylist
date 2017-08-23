@@ -17,11 +17,24 @@
     </section>
     <section class="content">
         <div class="row">
-            <div class="col-lg-3 col-xs-6">
+            <div class="col-md-12">
+                <div class="col-md-6 report_tab">
+                    <ul class="nav nav-tabs" role="tablist" >
+                    <li class="active" id ="day"><a href="#day" role="tab" data-toggle="tab">{{ __('Day') }}</a></li>
+                    <li id ="week"><a href="#week" role="tab" data-toggle="tab">{{ __('Week') }}</a></li>
+                    <li id ="monthly"><a href="#monthly" role="tab" data-toggle="tab">{{ __('Monthly') }}</a></li>
+                    </ul>
+                </div>
+            <div class="col-md-6">
+                
+            </div>
+            </div>
+            <br>
+            <div class="col-lg-4 col-xs-6">
                 <div class="small-box bg-aqua">
                     <div class="inner">
                         <h3>{{ __('150') }}</h3>
-                        <p>{{ __('New Orders') }}</p>
+                        <p>{{ __('Booking Report') }}</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -29,11 +42,11 @@
                     <a href="#" class="small-box-footer">{{ __('More info') }} <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-xs-6">
+            <div class="col-lg-4 col-xs-6">
                 <div class="small-box bg-green">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
-                        <p>{{ __('Bounce Rate') }}</p>
+                        <h3>53<sup style="font-size: 20px"></sup></h3>
+                        <p>{{ __('Bill Report') }}</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -41,7 +54,7 @@
                     <a href="#" class="small-box-footer">{{ __('More info') }} <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-xs-6">
+            <div class="col-lg-4 col-xs-6">
                 <!-- small box -->
                 <div class="small-box bg-yellow">
                     <div class="inner">
@@ -54,29 +67,12 @@
                     <a href="#" class="small-box-footer">{{ __('More info') }} <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-xs-6">
-                <div class="small-box bg-red">
-                    <div class="inner">
-                        <h3>{{ __('65') }}</h3>
-                        <p>{{ __('Unique Visitors') }}</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-pie-graph"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">{{ __('More info') }} <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
         </div>
         <div class="row">
             <div class="col-xs-12 ">
                 <div class="box">
                     <div class="box-header with-border">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="active" id ="day"><a href="#day" role="tab" data-toggle="tab">{{ __('Day') }}</a></li>
-                            <li id ="week"><a href="#week" role="tab" data-toggle="tab">{{ __('Week') }}</a></li>
-                            <li id ="monthly"><a href="#monthly" role="tab" data-toggle="tab">{{ __('Monthly') }}</a></li>
-                        </ul>
-                        <h3 class="text-center">{{ __('Monthly Report') }}</h3>
+                        <h1 class="text-center">{{ __('Report') }}</h1>
                         <div class="box-body  ">
                                 <div class="col-md-6">
                                     <main>

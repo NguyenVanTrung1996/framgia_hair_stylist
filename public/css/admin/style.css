@@ -156,7 +156,6 @@
 .button-edit-customer {
     padding-left: 110px;
 }
-
 #about_customer{
     margin-top: 10px;
 }
@@ -168,4 +167,18 @@
 #bill_image{ 
     height: 200px;
  }
- 
+
+.report_tab {
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.with-border h1 {
+    font-family: Tahoma;
+    font-size:40px;
+    border-bottom: 1px dashed #046ca3;
+}
+
+.border_create_bill {
+    box-shadow: 0px 5px 5px -1px #333;
+}

@@ -141,7 +141,7 @@
                     <h4 class="modal-title" id="myModalLabel">{{ __('Create Bill') }}</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" enctype="multipart/form-data" v-on:submit.prevent="createItem" class="form-horizontal">
+                    <form method="POST" enctype="multipart/form-data" v-on:submit.prevent="createItem" class="form-horizontal border_create_bill">
                         <div class="form-group">
                             <div class="col-sm-6">
                                 <label for="name" class="label_bill ">{{ __('Phone Customer') }}</label>

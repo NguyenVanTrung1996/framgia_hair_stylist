@@ -44,7 +44,6 @@ var manage_service = new Vue({
         this.token = Vue.ls.get('token', {});
         this.showDepartment();
         this.showInfor();
-        $("#showBill_Detail").modal("show");
     },
 
     methods: {
