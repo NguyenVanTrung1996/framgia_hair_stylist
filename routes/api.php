@@ -28,9 +28,11 @@ Route::group(['prefix' => 'v0', 'namespace' => 'Api'], function() {
     Route::post('user_booking', 'OrderBookingController@userBooking');
     Route::get('booking_filter_by_day', 'OrderBookingController@getBookingFilterByDay');
     Route::get('get-bill-by-customer-id', 'BillController@getBillByCustomerId');
+    Route::get('get-bill-by-customer-id-with-images', 'BillController@getBillByCusIdWithImages');
     Route::get('filter-customer', 'UserController@filterCustomer');
     
     Route::get('filter-order-booking', 'OrderBookingController@filterBooking');
+    Route::post('order-booking/stylist-upload-image', 'OrderBookingController@stylistUploadImage');
     Route::put('change-status-booking/{id}', 'OrderBookingController@changeStatus');
     Route::get('filter-bill', 'BillController@filterBill');
 

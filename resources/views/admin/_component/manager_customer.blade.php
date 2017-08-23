@@ -58,6 +58,77 @@
             </div> 
         </div>
     </div>
+      <div class="modal fade" id="showBill_Detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"  v-on:click="hideBill"  aria-label="Close"><span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">{{ __('Bill Detail') }}</h4>
+                </div>
+                <div class="modal-body" >
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 border_bill col-xs-10 col-xs-offset-1"> 
+                            <div class="bookingleft-agile font_bill" >
+                                <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                              <th >{{__('ID : ') }}</th>
+                                              <th>{{ __('1') }}</th>
+                                          </tr>
+                                      </thead>
+                                      <thead>
+                                           <tr>
+                                           <th ><i class="fa fa-id-card-o"> : </th>
+                                           <th>{{ __('tranvanmy - 0232323223') }}</td>
+                                           </tr>
+                                      </thead>
+                                      <thead>
+                                          <tr>
+                                              <th><i class="fa fa-calendar"> : </i></th>
+                                              <th>{{ __('29/20/2000') }}</th>
+                                          </tr>
+                                      </thead>
+                                  </table>  
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr >
+                                            <th>{{ __('Service') }}</th>
+                                            <th>{{ __('Stylist') }}</th>
+                                            <th>{{ __('Qty') }}</th>
+                                            <th>{{ __('Price') }}</th>
+                                            <th>{{ __('Row Total') }}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ __('cattoc') }}</td>
+                                            <td>{{ __('trung') }}</td>
+                                            <td>{{ __('200') }}</td>
+                                            <td>{{ __('200') }}</td>
+                                            <td>{{ __('200') }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-md-10 col-md-offset-1 border_bill col-xs-10 col-xs-offset-1">
+                        <div class="col-md-4">
+                            <img src="{{ asset('images/hd1') }}" id="bill_image">
+                        </div>
+                    </div> 
+                    <br>
+                    <button class="btn btn-default"  v-on:click="hideBill">
+                        <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                        {{ __('Close') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="content">
         <div class="row">
             <div class="col-xs-12">
@@ -126,7 +197,11 @@
             </div>
         </div>
     </section>
+<<<<<<< HEAD
      {{-- <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+=======
+{{--      <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+>>>>>>> eead4adbfb461adad5ceb40546da428e0c8ac76e
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -234,11 +309,19 @@
                                             <input type="text" class=" flexbox-grid-form-input form-control" id="inputlastname" data-bind="value: LastName">
                                 </div>
                                 <div class="col-md-12 flexbox-grid-form">
+<<<<<<< HEAD
                                     <label class="text-title-field" for="inputemail">Địa chỉ Email</label>
                                     <input type="text" class="form-control flexbox-grid-form-input" id="inputemail" data-bind="value: Email">
                                 </div>
                                 <div class="col-md-12 flexbox-grid-form">
                                     <label class="text-title-field" for="inputdate">Ngày sinh</label>
+=======
+                                    <label class="text-title-field" for="inputemail">{{ __('Địa chỉ Email') }}</label>
+                                    <input type="text" class="form-control flexbox-grid-form-input" id="inputemail" data-bind="value: Email">
+                                </div>
+                                <div class="col-md-12 flexbox-grid-form">
+                                    <label class="text-title-field" for="inputdate">{{ __('Ngày sinh') }}</label>
+>>>>>>> eead4adbfb461adad5ceb40546da428e0c8ac76e
                                     <input type="date" class="form-control flexbox-grid-form-input" id="inputemail" data-bind="value: ngaysinh">
                                 </div>
                                <div class="col-md-12 flexbox-grid-form">
@@ -299,6 +382,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel">{{ __('Detail Customer') }}</h4>
                 </div>
+<<<<<<< HEAD
                 {{-- <div class="modal-body">
                     <form method="POST" enctype="multipart/form-data" v-on:submit.prevent="createItem">
                         <div class="panel panel-success">
@@ -307,37 +391,98 @@
                                 <div class="col-sm-4">
                                     <p>Name:  @{{ fillItem.name }} </p>
                                     <p>Email:  @{{ fillItem.email }} </p>
+=======
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 form-horizontal">
+                            <div class="col-md-4 flexbox-annotated-section-content" id="infor_customer">
+                                <div class="col-md-12 flexbox-grid-form">
+                                    <label class="text-title-field" for="inputlastname">{{ __('Họ va Tên :   ') }} </label>
+                                        @{{ fillItem.name }}
+>>>>>>> eead4adbfb461adad5ceb40546da428e0c8ac76e
                                 </div>
-                                <div class="col-sm-4">
-                                    <p>Phone:  @{{fillItem.phone}} </p>
-                                    <p>
-                                        {{__('Gender:') }}
-                                        <span class="label label-danger">
-                                            @{{ fillItem.gender }}
-                                        </span>
-                                    </p>
+                                <div class="col-md-12 flexbox-grid-form">
+                                    <label class="text-title-field" for="inputemail">{{ __('Địa chỉ Email') }}</label>
+                                    <input type="text" class="form-control flexbox-grid-form-input" id="inputemail" v-model="fillItem.email" disabled="disabled">
                                 </div>
-                                <div class="col-sm-4">
-                                    <p>Birthday: @{{ fillItem.birthday }}</p>
+                                <div class="col-md-12 flexbox-grid-form">
+                                    <label class="text-title-field" for="inputdate">{{ __('Ngày sinh') }}</label>
+                                    <input type="date" class="form-control flexbox-grid-form-input" id="inputemail" v-model="fillItem.birthday" disabled="disabled">
+                                </div>
+                               <div class="col-md-12 flexbox-grid-form">
+                                    <label for="name">{{ __('Gender') }}</label>
+                                    <select  class="form-control create_customer" v-model="fillItem.gender" v-model="fillItem.gender" disabled="disabled">
+                                        <option value="" selected>{{ __('Select Gender') }}</option>
+                                        <option value="male">
+                                            <i class="fa fa-male" aria-hidden="true"></i>
+                                            {{ __('male') }}
+                                        </option>
+                                        <option value="female">{{ __('Famele') }}</option>
+                                        <option value="orther">{{ __('Orther') }}</option>
+                                    </select>
                                 </div>
                             </div>
-                            <br>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                {{ __('About Customer') }}
-                            </button>
-                            <br>
-                            <div class="collapse" id="collapseExample">
-                                <div class="well">
-                                    @{{ fillItem.about }}
+                            <div class="col-md-7 col-md-offset-1">
+                                <div class="col-md-12 flexbox-annotated-section-content" >
+                                    <div class="col-md-12 flexbox-grid-form-item1">   
+                                        <div class="flexbox-grid-form-item">
+                                            <label class="text-title-field" for="inputfirstname">{{ __('Số điện thoại') }}</label>
+                                            <input type="text" class="form-control flexbox-grid-form-input" id="inputfirstname" v-model="fillItem.phone" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 flexbox-grid-form-item1">   
+                                        <div class="flexbox-grid-form-item">
+                                            <label class="text-title-field" for="inputfirstname">{{ __('Số điện thoại') }}</label>
+                                            <input type="text" class="form-control flexbox-grid-form-input" id="inputfirstname" v-model="fillItem.phone" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12 flexbox-annotated-section-content" id="about_customer">
+                                    <div class="col-md-12 flexbox-grid-form">
+                                        <label class="text-title-field" for="inputlastname">{{ __('About') }}</label>
+                                        <textarea class=" flexbox-grid-form-input form-control " placeholder="About" rows="3" v-model="fillItem.about" disabled="disabled"></textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <hr>
+                        <div class="col-md-12 flexbox-annotated-section-content" id=" about_customer">
+                            <div class="col-md-12 flexbox-grid-form">
+                                <label class="text-title-field" for="inputlastname">{{ __('List Bill') }}</label>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>{{ __('STT') }}</th>
+                                            <th>{{ __('Ma') }}</th>
+                                            <th>{{ __('Thanh Toan') }}</th>
+                                            <th>{{ __('Ngay Tao') }}</th>
+                                            <th>{{ __('View') }}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ __('1') }}</td>
+                                            <td>{{ __('MD1') }}</td>
+                                            <th>{{ __('500$') }}</th>
+                                            <td>{{ __('10/10') }}</td>
+                                            <td>
+                                                <a href="javascript:void(0)" class="btn btn-success" v-on:click="viewBill">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                         <div class="form-group">
-                            <button class="btn btn-default" data-dismiss="modal">
+                               <button class="btn btn-default" data-dismiss="modal">
                                 <i class="fa fa-external-link-square" aria-hidden="true"></i>
                                 {{ __('Close') }}
                             </button>
                         </div>
+<<<<<<< HEAD
                     </form>
                 </div> --}}
                 <div class="modal-body">
@@ -406,6 +551,8 @@
                                 </div>
                             </div>
                         </div>
+=======
+>>>>>>> eead4adbfb461adad5ceb40546da428e0c8ac76e
                     </div>
                 </div>
             </div>
